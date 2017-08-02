@@ -1,0 +1,2 @@
+# Bazaar-A-Expense-manager-Android-App
+This is a simple expense manager which takes data ( import matarial cost, export material cost and expenses done) and then generate a report to get proit or lose happened at the period of weekly, monthly, yearly or for all the time from first inputed data. I have developed this app for my father to solve the problem of managing expense on his small business. It helps him to be relax from calculating at the end of every month of expenes. 
