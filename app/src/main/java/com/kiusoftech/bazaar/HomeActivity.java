@@ -11,6 +11,8 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -39,6 +41,13 @@ public class HomeActivity extends AppCompatActivity {
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
 
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(HomeActivity.this,"Button clicked",Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
     private void setupViewPager(ViewPager viewPager) {
@@ -47,6 +56,7 @@ public class HomeActivity extends AppCompatActivity {
         adapter.addFragment(new ExportFragment(), "EXPORT");
         adapter.addFragment(new ExpenseFragment(), "EXPENSE");
         viewPager.setAdapter(adapter);
+
     }
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
