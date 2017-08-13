@@ -14,7 +14,8 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways"
+            android:overScrollMode="always"
+            app:layout_scrollFlags="scroll"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
         <android.support.design.widget.TabLayout
@@ -31,7 +32,7 @@
         android:layout_height="wrap_content"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/importFab"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:padding="24dp"
@@ -40,4 +41,28 @@
         android:src="@drawable/addsign"
         android:layout_gravity="bottom|right|end"
         app:pressedTranslationZ="12dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/exportFab"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:padding="24dp"
+        android:elevation="6dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/addsign"
+        android:layout_gravity="bottom|right|end"
+        app:pressedTranslationZ="12dp"
+        android:visibility="gone"
+        android:background="@android:color/holo_red_dark"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/expenseFab"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:padding="24dp"
+        android:elevation="6dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/addsign"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_gravity="bottom|right|end"
+        app:pressedTranslationZ="12dp"
+        android:visibility="gone"/>
 </android.support.design.widget.CoordinatorLayout>
