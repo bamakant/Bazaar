@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kiusoftech.bazaar"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="24" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/ReportActivityMaterialTheme" >
+        <activity android:name="com.kiusoftech.bazaar.HomeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kiusoftech.bazaar.ImportEditorActivity"
+            android:label="@string/import_editor" />
+        <activity
+            android:name="com.kiusoftech.bazaar.ExportEditorActivity"
+            android:label="@string/export_editor" />
+        <activity
+            android:name="com.kiusoftech.bazaar.ExpenseEditorActivity"
+            android:label="@string/expense_editor" >
+        </activity>
+
+        <provider
+            android:name="com.kiusoftech.bazaar.data.BazaarProvider"
+            android:authorities="com.kiusoftech.bazaar"
+            android:exported="false" >
+        </provider>
+    </application>
+
+</manifest>

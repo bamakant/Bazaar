@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:elevation="2dp"
+    >
+    <TextView
+        android:id="@+id/dateExpenseTextView"
+        android:text="12-08-2017"
+        style="@style/expenseListItemStyle"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:textColor="@color/colorTitle"
+        android:layout_weight=".7"/>
+    <TextView
+        android:id="@+id/foodExpenseTextView"
+        android:text="180"
+        android:textAlignment="center"
+        android:layout_weight=".9"
+        style="@style/expenseListItemStyle"/>
+    <TextView
+        android:id="@+id/autoExpenseTextView"
+        android:text="200"
+        android:textAlignment="center"
+        android:layout_weight=".9"
+        style="@style/expenseListItemStyle"/>
+    <TextView
+        android:id="@+id/othersExpenseTextView"
+        android:text="600"
+        android:textAlignment="center"
+        android:layout_weight=".9"
+        style="@style/expenseListItemStyle"/>
+    <TextView
+        android:id="@+id/kakuExpenseTextView"
+        android:text="500"
+        android:textAlignment="center"
+        android:layout_weight=".9"
+        style="@style/expenseListItemStyle"/>
+</LinearLayout>

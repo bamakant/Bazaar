@@ -13,6 +13,55 @@
         <item name="android:textAllCaps">false</item>
         </style>
 
+    <style name="ImportActivityMaterialTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="colorPrimary">@color/importPrimary</item>
+        <item name="colorPrimaryDark">@color/importPrimaryDark</item>
+        <item name="colorAccent">@color/importAccent</item>
+    </style>
+
+    <style name="ExportActivityMaterialTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="colorPrimary">@color/exportPrimary</item>
+        <item name="colorPrimaryDark">@color/exportPrimaryDark</item>
+        <item name="colorAccent">@color/exportAccent</item>
+    </style>
+
+    <style name="ExpenseActivityMaterialTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="colorPrimary">@color/expensePrimary</item>
+        <item name="colorPrimaryDark">@color/expensePrimaryDark</item>
+        <item name="colorAccent">@color/expenseAccent</item>
+    </style>
+
+    <style name="ReportActivityMaterialTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="colorPrimary">@color/reportPrimary</item>
+        <item name="colorPrimaryDark">@color/reportPrimaryDark</item>
+        <item name="colorAccent">@color/reportAccent</item>
+    </style>
+
+
+
+    <!-- Themes designing for individual tabs -->
+
+    <!-- Current text view style -->
+
+    <style name="CurrentTextViewStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+    </style>
+
     <!-- Style for a babel in the editor -->
     <style name="CategoryStyle">
         <item name="android:layout_height">wrap_content</item>
@@ -58,4 +107,129 @@
         <item name="colorAccent">#FF1974</item>
     </style>
 
+    <style name="imExListItemStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.DeviceDefault.Small</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <style name="expenseListItemStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.DeviceDefault.Small</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <!--  Style section for Report Fragments items -->
+
+    <!-- Style for date range LinearLayout of Report Fragment -->
+    <style name="dateRangeLinearLayoutStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <!-- Style for parent linear layout of date button and title text view -->
+    <style name="linearLayoutOfDateButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <!-- Style for date range title text view -->
+    <style name="dateRangeTitleTextViewStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- Style for date range button -->
+
+    <style name="dateRangeButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/button_style</item>
+    </style>
+
+    <!-- Style for profit lose linear layout -->
+    <style name="profitLoseLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!-- Style for profit lost text view -->
+    <style name="profitLoseTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Style for profit lose amount text -->
+    <style name="profitLostAmountTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/holo_green_dark</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for Parent LinearLayout on Report fragment for import, export and expense details  -->
+    <style name="linearParentLayoutImExReportFragmentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginBottom">18dp</item>
+        </style>
+
+    <!-- Style for import export n expense header text view on report fragment -->
+    <style name="headingTextViewImExLayoutStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:padding">1dp</item>
+    </style>
+
+    <!-- Style for child linear layout of details section -->
+    <style name="childLinearLayoutImExReportFragmentStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">16dp</item>
+    </style>
+
+    <!-- Style for item title of import details layout -->
+    <style name="importDetailsItemTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:padding">2dp</item>
+    </style>
 </resources>

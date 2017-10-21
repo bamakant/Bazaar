@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:elevation="2dp"
+    >
+    <TextView
+        android:id="@+id/dateExportTextView"
+        android:text="12-08-2017"
+        style="@style/imExListItemStyle"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:textColor="@color/colorTitle"/>
+    <TextView
+        android:id="@+id/priceExportTextView"
+        android:text="5000"
+        android:textAlignment="center"
+        style="@style/imExListItemStyle"/>
+    <TextView
+        android:id="@+id/quantityExportTextView"
+        android:text="2"
+        android:textAlignment="center"
+        style="@style/imExListItemStyle"/>
+</LinearLayout>

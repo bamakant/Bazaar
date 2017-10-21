@@ -1,0 +1,230 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kiusoftech.bazaar.ReportFragment">
+
+    <LinearLayout style="@style/dateRangeLinearLayoutStyle">
+
+        <LinearLayout style="@style/linearLayoutOfDateButton">
+
+            <TextView
+                style="@style/dateRangeTitleTextViewStyle"
+                android:text="From" />
+
+            <Button
+                android:id="@+id/startDatePickerButton"
+                style="@style/dateRangeButtonStyle"
+                android:text="20170810" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp" />
+
+        <LinearLayout style="@style/linearLayoutOfDateButton">
+
+            <TextView
+                style="@style/dateRangeTitleTextViewStyle"
+                android:text=" To " />
+
+            <Button
+                android:id="@+id/endDatePickerButton"
+                style="@style/dateRangeButtonStyle"
+                android:text="20171002" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/profitLoseLayoutStyle">
+
+                <TextView
+                    style="@style/profitLoseTextStyle"
+                    android:text="profit or lose : " />
+
+                <TextView
+                    android:id="@+id/reportProfitLoseTextView"
+                    style="@style/profitLostAmountTextStyle"
+                    android:text="5600"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/linearParentLayoutImExReportFragmentStyle"
+                android:background="@drawable/report_import_layout_style"
+                android:elevation="8dp"
+                android:orientation="horizontal"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/headingTextViewImExLayoutStyle"
+                        android:text="Import Total " />
+
+                    <LinearLayout style="@style/childLinearLayoutImExReportFragmentStyle">
+
+                        <TextView
+                            style="@style/importDetailsItemTitleStyle"
+                            android:text="Total Amount : " />
+
+                        <TextView
+                            android:id="@+id/reportImportTotalAmountTextView"
+                            style="@style/importDetailsItemTitleStyle"
+                            android:text=" 100000 " />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/childLinearLayoutImExReportFragmentStyle">
+
+                        <TextView
+                            style="@style/importDetailsItemTitleStyle"
+                            android:text="Total Quantity : " />
+
+                        <TextView
+                            android:id="@+id/reportImportTotalQuantityTextView"
+                            style="@style/importDetailsItemTitleStyle"
+                            android:text=" 25 " />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/importDetailsItemTitleStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Details" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearParentLayoutImExReportFragmentStyle"
+                android:background="@drawable/report_export_layout_style"
+                android:elevation="8dp">
+
+                <TextView
+                    style="@style/headingTextViewImExLayoutStyle"
+                    android:text="Export Details" />
+
+                <LinearLayout style="@style/childLinearLayoutImExReportFragmentStyle">
+
+                    <TextView
+                        style="@style/importDetailsItemTitleStyle"
+                        android:text="Total Amount : " />
+
+                    <TextView
+                        android:id="@+id/reportExportTotalAmountTextView"
+                        style="@style/importDetailsItemTitleStyle"
+                        android:text=" 105000 " />
+                </LinearLayout>
+
+                <LinearLayout style="@style/childLinearLayoutImExReportFragmentStyle">
+
+                    <TextView
+                        style="@style/importDetailsItemTitleStyle"
+                        android:text="Total Quantity : " />
+
+                    <TextView
+                        android:id="@+id/reportExportTotalQuantityTextView"
+                        style="@style/importDetailsItemTitleStyle"
+                        android:text=" 25 " />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearParentLayoutImExReportFragmentStyle"
+                android:background="@drawable/report_expense_layout_style"
+                android:elevation="8dp">
+
+                <TextView
+                    style="@style/headingTextViewImExLayoutStyle"
+                    android:text="Expense Details" />
+
+                <LinearLayout style="@style/childLinearLayoutImExReportFragmentStyle">
+
+                    <TextView
+                        style="@style/importDetailsItemTitleStyle"
+                        android:text="Total Food Expense : " />
+
+                    <TextView
+                        android:id="@+id/reportTotalFoodExpenseTextView"
+                        style="@style/importDetailsItemTitleStyle"
+                        android:text=" 500 " />
+                </LinearLayout>
+
+                <LinearLayout style="@style/childLinearLayoutImExReportFragmentStyle">
+
+                    <TextView
+                        style="@style/importDetailsItemTitleStyle"
+                        android:text="Total Auto Expense : " />
+
+                    <TextView
+                        android:id="@+id/reportTotalAutoExpenseTextView"
+                        style="@style/importDetailsItemTitleStyle"
+                        android:text=" 200 " />
+                </LinearLayout>
+
+                <LinearLayout style="@style/childLinearLayoutImExReportFragmentStyle">
+
+                    <TextView
+                        style="@style/importDetailsItemTitleStyle"
+                        android:text="Total Others Expense : " />
+
+                    <TextView
+                        android:id="@+id/reportTotalOthersExpenseTextView"
+                        style="@style/importDetailsItemTitleStyle"
+                        android:text=" 200 " />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearParentLayoutImExReportFragmentStyle"
+                android:background="@drawable/report_kaku_layout_style"
+                android:elevation="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/headingTextViewImExLayoutStyle"
+                    android:text="Kaku Taken : " />
+
+                <TextView
+                    android:id="@+id/reportTotalAmountKakuTakenTextView"
+                    style="@style/importDetailsItemTitleStyle"
+                    android:text="1000" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

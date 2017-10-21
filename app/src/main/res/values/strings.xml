@@ -27,6 +27,8 @@
 
     <string name="save_button">Save</string>
 
+    <string name="delete_button">Delete</string>
+
     <string name="category_food"> Food :</string>
 
     <string name="category_auto"> Auto :</string>
@@ -34,5 +36,30 @@
     <string name="category_others"> Others :</string>
 
     <string name="category_kaku"> Kaku :</string>
+
+    <!-- Dialog message when user is leaving editor but hasn't saved changes -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current Entry-->
+    <string name="keep_editing">Keep Editing</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current Entry -->
+    <string name="delete_dialog_msg">Delete this entry?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current Entry -->
+    <string name="delete">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current Entry -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Toast message in editor when current entry was successfully deleted -->
+    <string name="editor_delete_entry_successful">Entry deleted</string>
+
+    <!-- Toast message in editor when current entry has failed to be deleted -->
+    <string name="editor_delete_entry_failed">Error with deleting entry</string>
+
 
 </resources>

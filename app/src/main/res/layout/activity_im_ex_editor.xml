@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:overScrollMode="always"
+            app:layout_scrollFlags="scroll"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <!-- Price category -->
+        <LinearLayout
+            android:id="@+id/container_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_price" />
+
+            <!-- Input fields -->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="4dp">
+
+                <!-- Amount field -->
+                <EditText
+                    android:id="@+id/edit_pet_price"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_enter_amount"
+                    android:inputType="number" />
+
+                <!-- Units for amount (Rs.) -->
+                <TextView
+                    android:id="@+id/label_price_units"
+                    style="@style/EditorUnitsStyle"
+                    android:text="@string/unit_price"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- Quantity category -->
+        <LinearLayout
+            android:id="@+id/container_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin"
+            android:orientation="horizontal"
+            >
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_quantity" />
+
+            <!-- Input fields -->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="4dp">
+
+                <!-- Amount field -->
+                <EditText
+                    android:id="@+id/edit_pet_quantity"
+                    style="@style/EditorFieldStyle"
+                    android:inputType="number"
+                    android:text="@string/default_quantity" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/editor_save_button"
+            style="@style/EditorSaveButtonStyle"
+            android:text="@string/save_button"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:textColor="@android:color/white"
+            />
+        <Button
+            android:id="@+id/editor_delete_button"
+            style="@style/EditorSaveButtonStyle"
+            android:text="@string/delete_button"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:textColor="@android:color/white"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            >
+            <TextView
+                android:text="Date"
+                style="@style/EditorFieldStyle"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_marginRight="16dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/currentDateTextView"
+                style="@style/CurrentTextViewStyle"
+                android:text="20170812"
+                android:textStyle="italic|bold"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/changeDateImExButton"
+            style="@style/EditorSaveButtonStyle"
+            android:textColor="@android:color/white"
+            android:text="Change date"
+            android:textAllCaps="true"/>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

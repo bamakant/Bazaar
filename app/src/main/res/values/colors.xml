@@ -7,6 +7,22 @@
     <color name="navigationBarColor">#000000</color>
     <color name="colorAccent">#c8e8ff</color>
 
+    <color name="importPrimary">#7b241c</color>
+    <color name="importPrimaryDark">#641e16</color>
+    <color name="importAccent">#a93226</color>
+
+    <color name="exportPrimary">#f1c40f</color>
+    <color name="exportPrimaryDark">#d4ac0d</color>
+    <color name="exportAccent">#f1c40f</color>
+
+    <color name="expensePrimary">#6c3483</color>
+    <color name="expensePrimaryDark">#4a235a</color>
+    <color name="expenseAccent">#8e44ad</color>
+
+    <color name="reportPrimary">#008080</color>
+    <color name="reportPrimaryDark">#17202a</color>
+    <color name="reportAccent">#FF00FF</color>
+
     <!-- colorts for labels -->
 
     <color name="colorTitle">#F0514B</color>
